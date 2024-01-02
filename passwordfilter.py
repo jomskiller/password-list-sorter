@@ -26,6 +26,11 @@ def filter_passwords(file_path, min_uppercase, min_lowercase, min_special, min_n
 
     return filtered_passwords
 
+def save_to_file(filtered_passwords, output_file_path):
+    with open(output_file_path, 'w') as output_file:
+        for password in filtered_passwords:
+            output_file.write(password + '\n')
+
 def main():
     # Get user input
     file_path = input("Enter the full path to the list file: ")
@@ -39,10 +44,12 @@ def main():
     # Filter passwords based on user input
     filtered_passwords = filter_passwords(file_path, min_uppercase, min_lowercase, min_special, min_numbers, min_total_chars)
 
-    # Print the results
-    print("\nFiltered Passwords:")
-    for password in filtered_passwords:
-        print(password)
+    # Save the results to a file
+    output_file_path = input("Enter the full path for the output file: ")
+    save_to_file(filtered_passwords, output_file_path)
+
+    print(f"\nFiltered Passwords saved to {output_file_path}")
 
 if __name__ == "__main__":
     main()
+
