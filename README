@@ -25,6 +25,6 @@ Enter the minimum number of lowercase letters: 1
 Enter the minimum number of special characters: 1
 Enter the minimum number of numbers: 1
 Enter the minimum total number of characters: 1
-Enter the full path for the output file: ./filtered.txt
+Enter the full path for the output file: ./filtered.txt  ----- SPECIFY WHOLE PATH WHERE TO SAVE THE FILTERED LIST WITH THE NAME YOU WANT! -----
 
 Filtered Passwords saved to ./filtered.txt
