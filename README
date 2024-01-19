@@ -5,27 +5,26 @@ BASICALLY IT TAKES THE FULL PATH TO THE PASSWORD LIST
 ASK YOU FOR THE PASSWORD REQUIREMENTS AND PRINT THE RESULT
 
 -------------------------EXAMPLE SCENARIO---------------------------------------------
-python3 filterpassword.py                                                                                                                 
-Enter the full path to the list file: /usr/share/SecLists/Passwords/Leaked-Databases/rockyou-50.txt 
-Enter the minimum number of uppercase letters: 1
-Enter the minimum number of lowercase letters: 0
-Enter the minimum number of special characters: 0
-Enter the minimum number of numbers: 1
-Enter the minimum total number of characters: 7
+python3 password-sorter.py
 
-Filtered Passwords:
-ABC123
-Password1
-PASSWORD1
-PRINCESS1
-123ABC
-BABYGIRL1
-Princess1
-P@ssw0rd
-JORDAN23
-Passw0rd
-ANGEL1
-Jesus1
-LOVE123
-JESUS1
-50CENT
+ .----------------. .----------------. .----------------. .----------------. .----------------. .----------------. .----------------. .----------------. .----------------. .----------------. 
+| .--------------. | .--------------. | .--------------. | .--------------. | .--------------. | .--------------. | .--------------. | .--------------. | .--------------. | .--------------. |
+| |     _____    | | |     ____     | | | ____    ____ | | |    _______   | | |  ___  ____   | | |     _____    | | |   _____      | | |   _____      | | |  _________   | | |  _______     | |
+| |    |_   _|   | | |   .'    `.   | | ||_   \  /   _|| | |   /  ___  |  | | | |_  ||_  _|  | | |    |_   _|   | | |  |_   _|     | | |  |_   _|     | | | |_   ___  |  | | | |_   __ \    | |
+| |      | |     | | |  /  .--.  \  | | |  |   \/   |  | | |  |  (__ \_|  | | |   | |_/ /    | | |      | |     | | |    | |       | | |    | |       | | |   | |_  \_|  | | |   | |__) |   | |
+| |   _  | |     | | |  | |    | |  | | |  | |\  /| |  | | |   '.___`-.   | | |   |  __'.    | | |      | |     | | |    | |   _   | | |    | |   _   | | |   |  _|  _   | | |   |  __ /    | |
+| |  | |_' |     | | |  \  `--'  /  | | | _| |_\/_| |_ | | |  |`\____) |  | | |  _| |  \ \_  | | |     _| |_    | | |   _| |__/ |  | | |   _| |__/ |  | | |  _| |___/ |  | | |  _| |  \ \_  | |
+| |  `.___.'     | | |   `.____.'   | | ||_____||_____|| | |  |_______.'  | | | |____||____| | | |    |_____|   | | |  |________|  | | |  |________|  | | | |_________|  | | | |____| |___| | |
+| |              | | |              | | |              | | |              | | |              | | |              | | |              | | |              | | |              | | |              | |
+| '--------------' | '--------------' | '--------------' | '--------------' | '--------------' | '--------------' | '--------------' | '--------------' | '--------------' | '--------------' |
+ '----------------' '----------------' '----------------' '----------------' '----------------' '----------------' '----------------' '----------------' '----------------' '----------------' 
+    
+Enter the full path to the list file: /usr/share/wordlists/rockyou.txt
+Enter the minimum number of uppercase letters: 1
+Enter the minimum number of lowercase letters: 1
+Enter the minimum number of special characters: 1
+Enter the minimum number of numbers: 1
+Enter the minimum total number of characters: 1
+Enter the full path for the output file: ./filtered.txt
+
+Filtered Passwords saved to ./filtered.txt
